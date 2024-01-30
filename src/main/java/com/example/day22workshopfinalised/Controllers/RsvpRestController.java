@@ -56,7 +56,7 @@ public class RsvpRestController {
         Optional<Rsvp> rsvp = rsvpService.findRsvpByName(name);
         System.out.println("Rsvp from " + rsvp.get().getName() + " successfully received from repo.");
         System.out.println(rsvp.get().getConfirmationDate());
-        // Issue with converting to json.
+
         JsonObject jsonRsvp = jsonService.rsvpToJson(rsvp);
         String jsonRsvpString = jsonRsvp.toString();
 

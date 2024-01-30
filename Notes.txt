@@ -1,0 +1,1 @@
+1. When sending in json data FROM postman, ensure that the keys you use match the variables declared in your java object.
